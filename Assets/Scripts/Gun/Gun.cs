@@ -77,6 +77,10 @@ public class Gun : MonoBehaviour
             {
                 Destroy(bullet);
             }
+            ,
+            false,
+            20,
+            40
         );
     }
 
