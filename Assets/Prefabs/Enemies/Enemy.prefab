@@ -69,6 +69,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e652642db6260344cb636626629dc1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _splatterPrefab: {fileID: 6122869911991339370, guid: 4a0186804f9af5840ac3a068216eff21, type: 3}
+  _deathVFX: {fileID: 7106177272023412216, guid: e9ea0d323cc2e24429799fca91fbd2aa, type: 3}
   _startingHealth: 3
 --- !u!50 &-6445784336495608663
 Rigidbody2D:
