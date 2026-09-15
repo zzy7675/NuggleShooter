@@ -39,8 +39,13 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         Health health = other.gameObject.GetComponent<Health>();
         health?.TakeDamage(_damageAmount);
+
         Knockback knockback = other.gameObject.GetComponent<Knockback>();
         knockback?.GetKnockedBack(PlayerController.Instance.transform.position, _knockbackThrust);
+
+        Flash flash = other.gameObject.GetComponent<Flash>();
+        flash?.StartFlash();
+
         _gun.ReleaseBulletFromPool(this);
     }
 }

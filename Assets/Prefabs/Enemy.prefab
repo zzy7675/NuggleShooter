@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3313540786046931640}
   - component: {fileID: 1796344123863765438}
   - component: {fileID: 4828196245410714430}
+  - component: {fileID: 4716641555394342648}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -179,6 +180,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a7739bce02e33d4197d65f54e03c023, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Knockback
+  _knockbackTime: 0.2
+--- !u!114 &4716641555394342648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500829499347730933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcdb76a3675d28e4ea24c88438721acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Flash
+  _defaultMaterial: {fileID: 2100000, guid: 59049ed924f4b264eb6c09c5294b5381, type: 2}
+  _whiteFlashMaterial: {fileID: 2100000, guid: 7552df672c9198f4ba7c5de4497d8972, type: 2}
+  _flashTime: 0.1
 --- !u!1 &5153281642299242202
 GameObject:
   m_ObjectHideFlags: 0
