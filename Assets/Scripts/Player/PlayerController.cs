@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
         return transform.eulerAngles.y == 0;
     }
 
-    private bool CheckGrounded()
+    public bool CheckGrounded()
     {
         Collider2D isGrounded = Physics2D.OverlapBox(_feetTransform.position, _groundCheck, 0f, _groundLayer);
         return isGrounded;

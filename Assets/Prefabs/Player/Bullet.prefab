@@ -47,8 +47,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324da6bc5594197419d59cac9e0abd95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bulletVFX: {fileID: 4773572233330663105, guid: 3269ba7ac24503f4a81a8f739f2dd100, type: 3}
   _moveSpeed: 30
   _damageAmount: 1
+  _knockbackThrust: 20
 --- !u!212 &3373200371414082845
 SpriteRenderer:
   m_ObjectHideFlags: 0
