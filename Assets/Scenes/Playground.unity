@@ -12841,6 +12841,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimations
   _moveDustVFX: {fileID: 1824357876}
+  _tiltAngle: 14
+  _tiltSpeed: 5
+  _characterSpriteTransform: {fileID: 893427218}
 --- !u!1 &2043640393
 GameObject:
   m_ObjectHideFlags: 0

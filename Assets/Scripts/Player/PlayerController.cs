@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public Vector2 MoveInput => _frameInput.Move;
     public static Action OnJump;
     public static PlayerController Instance;
 
