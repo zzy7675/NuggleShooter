@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerAnimations : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _moveDustVFX;
+    [SerializeField] private ParticleSystem _poofDustVFX;
     [SerializeField] private float _tiltAngle = 20f;
     [SerializeField] private float _tiltSpeed = 5f;
     [SerializeField] private Transform _characterSpriteTransform;
@@ -13,6 +14,15 @@ public class PlayerAnimations : MonoBehaviour
     {
         DetectMoveDust();
         ApplyTilt();
+    }
+
+    private void OnEnable()
+    {
+        PlayerController.OnJump += PlayPoofDustVFX;
+    }
+
+    private void OnDisable() {
+        PlayerController.OnJump -= PlayPoofDustVFX;
     }
 
     private void DetectMoveDust()
@@ -30,6 +40,11 @@ public class PlayerAnimations : MonoBehaviour
                 _moveDustVFX.Stop();
             }
         }
+    }
+
+    private void PlayPoofDustVFX()
+    {
+        _poofDustVFX.Play();
     }
 
     private void ApplyTilt()
