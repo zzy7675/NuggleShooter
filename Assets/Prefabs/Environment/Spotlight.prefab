@@ -75,7 +75,7 @@ SortingGroup:
   m_GameObject: {fileID: 2600529440610742174}
   m_Enabled: 1
   m_SortingLayerID: 1864287217
-  m_SortingLayer: 1
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_SortAtRoot: 0
 --- !u!1 &5061583403435041228
@@ -155,7 +155,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1864287217
-  m_SortingLayer: 1
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1834138078, guid: 34e26347e5f16ed43b9611f72a585923, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -246,7 +246,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1864287217
-  m_SortingLayer: 1
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: -810262662, guid: 34e26347e5f16ed43b9611f72a585923, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.251
-  m_Color: {r: 0.7332389, g: 0.36040404, b: 0.8584906, a: 1}
+  m_Color: {r: 0.45455602, g: 0.85882354, b: 0.36078432, a: 1}
   m_Intensity: 5.22
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
