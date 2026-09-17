@@ -1,9 +1,11 @@
+using System.Collections;
 using UnityEngine;
 
 public class ColorSpotlight : MonoBehaviour
 {
     [SerializeField] private GameObject _spotlightHead;
     [SerializeField] private float _rotationSpeed = 20f;
+    [SerializeField] private float _discoRotationSpeed = 120f;
     [SerializeField] private float _maxRotation = 45f;
 
     private float _currentRotation;
@@ -29,5 +31,16 @@ public class ColorSpotlight : MonoBehaviour
         float randomStartingZ = Random.Range(-_maxRotation, _maxRotation);
         _spotlightHead.transform.localRotation = Quaternion.Euler(0f, 0f, randomStartingZ);
         _currentRotation = randomStartingZ + _maxRotation;
+    }
+    public IEnumerator SpotlightDiscoPartyRoutine(float discoPartyTime)
+    {
+        float defaultRotationSpeed = _rotationSpeed;
+        _rotationSpeed = _discoRotationSpeed;
+        yield return new WaitForSeconds(discoPartyTime);
+        _rotationSpeed = defaultRotationSpeed;
+    }
+    private void UpdateRotationSpeed(float rotationSpeedModifier)
+    {
+        _rotationSpeed += rotationSpeedModifier;
     }
 }
